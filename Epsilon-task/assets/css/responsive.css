@@ -1,0 +1,15 @@
+/* -----Form element----- */
+
+@media screen and (min-width:577px) and (max-width:1024px){
+  .form-element-bg { 
+    width: 50%; 
+  }
+}
+   
+
+@media screen and (min-width:320px) and (max-width:576px){
+  .form-element-bg { 
+    width: 100%;
+  }
+}
+   

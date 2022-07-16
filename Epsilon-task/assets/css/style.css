@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Sans-Regular';
+    src: url("./fonts/SourceSansPro-Regular.ttf") format("truetype"), ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Sans-Bold";
+  src: url("./fonts/SourceSansPro-Bold.ttf") format("truetype"), ;
+  font-weight: 900; 
+}
+
+@font-face {
+  font-family: "Sans-Semibold";
+  src: url("./fonts/SourceSansPro-SemiBold.ttf") format("truetype"), ;
+  font-weight: 600; 
+}
+  
+body{
+  font-family: 'Sans-Regular', sans-serif !important;
+}
+
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+:root {
+  --blue: #0f5ef0;
+  --grey: #7a8594;
+  --black: #1a1a1a; 
+  --grey-input: #737373;
+  --white: #ffffff;
+  --blue-table: #0063e6;
+  --grey-table: #666666;
+  --skyblue: #F0F6FF; 
+  --offwhite-strip: #f2f2f2;
+}
+
+h3{
+  margin-left: 24px;
+}
+ 
+/* -------------Part-1 Card Component start---------- */
+
+.card-component{
+  margin: 50px 0;
+}
+
+.card-component-bg{
+  border: 1px solid var(--white); 
+  border-radius: 1px;
+  width: 292px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 8px rgb(26 26 26 / 20%);
+}
+
+.card-img-area {
+  height: auto;
+  width: 290px;
+  overflow: hidden;
+}
+
+.card-img-area img{
+  width: 100%;
+  transform: scale(1.25);
+}
+
+.card-component-bg p{
+  padding-left: 16px;
+}
+
+.card-component-text p:nth-child(1){
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.card-component-text p:nth-child(2){
+  color: var(--grey);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+
+.card-component-text p:nth-child(3){
+  color: var(--grey);
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+.card-component-bg:hover{
+  box-shadow: 0px 3px 8px rgb(26 26 26 / 60%);
+}
+
+/* -------------Part-1 Card Component end---------- */
+
+/* -------------Part-2 Form Element start---------- */
+
+.form-element{
+  margin: 50px 0;
+}
+
+.form-element-bg {
+  border: 1px solid #dddddd;
+  padding: 16px 40px 40px;
+  border-radius: 5px;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+form label{
+  margin-top: 24px;
+  color: var(--black);
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  height: 36px;
+  resize: vertical;
+}
+
+input[type="submit"] { 
+  color: var(--white);
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 32px;
+  height: 36px;
+  background-color: var(--blue);
+}
+
+input::placeholder {
+  color: var(--grey-input); 
+  font-size: 14px; 
+}
+
+input[type=submit]:hover {
+  background-color: var(--skyblue);
+  color: var(--blue);
+}
+
+/* -------------Part-2 Form Element end---------- */
+
+
+/* -----------Part-3 Table function start----------- */
+
+.table-function{
+  margin: 50px 0;
+}
+ 
+.table-function-outer{
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  font-size: 14px ;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+tbody, td, tfoot, th, thead, tr { 
+  border-style: none !important; 
+}
+
+.table>:not(caption)>*>* {
+  padding: 14px 24px 13px !important;
+}
+ 
+.table tr th:nth-child(3){
+  text-align: right;
+}
+  
+.table tr td:nth-child(3){
+  text-align: right;
+}
+
+.table th{
+  color: var(--grey-table); 
+  font-weight: 900;
+}
+
+.table td{
+  color: var(--grey-table);  
+}
+
+.table thead tr{
+  background-color: var(--offwhite-strip); 
+}
+
+.table tr:nth-child(even) {
+  background-color: var(--offwhite-strip);
+}
+
+.table tr:hover{
+  background-color: var(--skyblue); 
+}
+
+table.dataTable thead .sorting:after{ 
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 600; 
+  content: "\f0dc"; 
+  margin-left: 5px;
+}
+
+table.dataTable thead .sorting_asc:after{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 600; 
+  content: "\f0de"; 
+  margin-left: 5px;
+  color: var(--blue);
+}
+
+table.dataTable thead .sorting_desc:after{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 600; 
+  content: "\f0dd"; 
+  margin-left: 5px;
+  color: var(--blue);
+}
+
+table.dataTable.no-footer {
+  border-bottom: none !important; 
+}
+
+table.dataTable thead .sorting {
+  background-image: none !important;
+}
+table.dataTable thead .sorting_asc {
+  background-image: none !important;
+}
+table.dataTable thead .sorting_desc {
+  background-image: none !important;
+}
+
+/* -----------Part-3 Table function end----------- */
